@@ -18,7 +18,7 @@ var myFavoriteNumber = 7
 // console.log(myFavoriteNumber === "7")
 
 // ---- LOOSE EQUALITY  -----
-//   ==    Checks only the value
+//   ==    Checks only the valucd
 //   uses TYPE COERCION 
 
 //type coercison = process of converting value from one data type to another data type
@@ -108,7 +108,7 @@ if(num1 > num2) {
 
 
 //   STRING INTERPOLATION  
-//   like concatenation, with different syntax and easier with variables. 
+//   like concatenation, with different syntax and easier to use with variables. 
     // Uses Backticks ``  ${}
 // JS runs line by line top to bottom,  your more specific conditionals should go first.
 //  can have two true statements but program will only run the first one, the second will not run
