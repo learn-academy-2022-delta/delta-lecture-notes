@@ -37,3 +37,14 @@ A JavaScript library for building user interfaces.
 - Look in the console
   - JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>?
   - Fragments - empty opening and closing tags that don't create an additional node in the DOM
+
+### Create React App
+- yarn create react-app folder-name
+- yarn start - fires up the server at localhost:3000
+- control + c - stops the server
+- files we care about:
+  - public/index.html
+  - src/index.js
+- file we will work in:
+  - src/App.js
+  - src/App.css

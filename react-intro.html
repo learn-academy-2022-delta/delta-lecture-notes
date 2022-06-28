@@ -20,10 +20,41 @@
             <>
               <h1>Hello React!</h1>
               <h3>Hello Delta!</h3>
+              <HelloDelta />
+              <HelloDelta />
+              <HelloDelta />
+              <HelloDelta />
+              <HelloDelta />
+              <HelloDelta />
             </>
           )
         }
       }
+
+      class HelloDelta extends React.Component{
+        render(){
+          return(
+            <>
+              <p>Hello there Delta class. It is fun to learn React with you.</p>
+              <LearningReactIsCool />
+            </>
+          )
+        }
+      }
+
+      class LearningReactIsCool extends React.Component{
+        render(){
+          return(
+            <>
+              <ul>
+                <li>Reusable components make life easier.</li>
+                <li>Virtual DOM makes React fast.</li>
+              </ul>
+            </>
+          )
+        }
+      }
+
       const domContainer = document.querySelector('#react-container');
       ReactDOM.render(<HelloReact />, domContainer);
 
