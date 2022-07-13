@@ -18,6 +18,10 @@ Student.new('Elyse', 'Alpha')
 Model - class, define data
 Each row in a database is an instance of the class
 
+## PostgreSQL
+SQL - structured query language, columns and rows, Postgres is a flavor of sql
+NOSQL - not only structured query language, MongoDB
+
 ## Postgres (PostgreSQL)
 General purpose programming languages - JavaScript, Ruby
 Domaine-specific languages - HTML, RSpec, postgres
@@ -80,3 +84,32 @@ FROM country
 WHERE indepyear IS NOT null
 ORDER BY indepyear DESC
 LIMIT 10
+
+Population density:
+SELECT name, surfacearea, population,
+population / surfacearea AS density
+FROM country
+WHERE population > 0
+ORDER BY density
+LIMIT 5
+
+1. Of the countries with the top 10 gnp  2. which has smallest population (Canada)
+WITH populated_countries AS (
+SELECT name, population, gnp
+FROM country
+WHERE population > 0
+ORDER BY gnp DESC
+LIMIT 10
+)
+SELECT name, population, gnp
+FROM populated_countries
+ORDER BY population
+LIMIT 1
+
+Which countries achieved independence after 1945 and are not some kind of republic?
+
+SELECT name, governmentform, indepyear
+FROM country
+WHERE governmentform
+NOT LIKE '%epublic'
+AND indepyear > 1945
