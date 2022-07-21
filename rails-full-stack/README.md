@@ -11,7 +11,22 @@
   - Route
   - View
 - New
+  - Controller
+  - Route
+  - View
 - Create
+  - Controller
+  - Route
+  - View
 - Destroy
+  - Controller
+  - Route
+  - View
 - Edit
+  - Controller
+  - Route
+  - View
 - Update
+  - Controller
+  - Route
+  - View

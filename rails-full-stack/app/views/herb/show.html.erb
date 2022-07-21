@@ -4,4 +4,12 @@
 <p>Is the herb watered: <%= @herb.watered %></p>
 
 <br />
+<p><%= button_to 'Delete Herb', delete_herb_path, method: :delete %></p>
+
+<br />
+<p>
+  <%= link_to 'Edit Herb', edit_herb_path(@herb) %>
+</p>
+
+<br />
 <p>Back to <%= link_to 'all the herbs', herbs_path %></p>

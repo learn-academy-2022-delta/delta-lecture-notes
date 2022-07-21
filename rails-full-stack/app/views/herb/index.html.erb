@@ -2,6 +2,13 @@
 
 <ul>
   <% @herbs.each do |herb| %>
-    <li><%= link_to herb.name, herb_path(herb) %></li>
+    <li>
+      <%= link_to herb.name, herb_path(herb) %>
+    </li>
   <% end %>
 </ul>
+
+<br />
+<p>
+  <%= link_to 'Add a New Herb', new_herb_path %>
+</p>
